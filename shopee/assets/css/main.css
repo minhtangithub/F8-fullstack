@@ -737,6 +737,107 @@ after nguoc lai */
 }
 
 /* product  */
-.product-item__img {
-    height: 100px;
+.product {
+    padding: 12px 0;
 }
+.product-item {
+    background-color: var(--white-color);
+    box-shadow: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 10%);
+}
+
+.product-item__img {
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-item__content {
+    padding:10px;
+}
+.product-item___name  {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    height: 3.6rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-weight: 400;
+    margin: 0;
+}
+.product-item__price {
+    display: flex;
+    margin-top: 5px;
+    align-items: baseline;
+}
+.product-item__price-old {
+    font-size: 1.2rem;
+    color: #555;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+.product-item__price-current {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+.product-item__action {
+    display: flex;
+    margin-top: 5px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.product-item-empty-heart-icon {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.product-item-full-heart-icon {
+    font-size: 1rem;
+    color: #f63d30;
+}
+
+
+.product-item__action-like .product-item-full-heart-icon {
+    display: none;
+}
+
+.product-item__action-like--active .product-item-full-heart-icon {
+    display: block;
+}
+
+.product-item__action-like--active .product-item-empty-heart-icon {
+    display: none;
+}
+
+.product-item__action-rating {
+    font-size: 1rem;
+    color: rgb(255, 206, 61);
+}
+.product-item__origin {
+    margin-top: 5px;
+    display: flex;
+}
+.product-item__origin-brand {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 300;
+}
+.product-item__origin-nation {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 300;
+    margin-left: auto;
+    /* thay vi space between de margin auto no tu troi ve ben kia  */
+
+}
+/* .product-item__favorite {
+}
+.product-item__sale-off {
+}
+.product-item__sale-off-percent {
+}
+.product-item__sale-off-label {
+} */

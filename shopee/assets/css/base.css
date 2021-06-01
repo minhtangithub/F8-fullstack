@@ -44,6 +44,11 @@ html {
     width: calc(16.6667%);
 }
 
+.grid-col-2-0f-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(20%);
+}
 .grid-col-10 {
     padding-left: 12px;
     padding-right: 12px;
