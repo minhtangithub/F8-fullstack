@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+/* xu ly float */
+.row::after {
+    content: "";
+    display: block;
+    /* display gi cung duoc */
+    clear : both; 
+} 
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: calc(100%/3);
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.section {
+    padding: 64px 16px;
+    /* do da co box-sizing */
+    margin-left: auto;
+    margin-right: auto;
+    /* chu y thao tac nay can cac thanh phan vao giua */
+    max-width: 800px;
+    line-height: 1.5;
+}
+
+/*----------header----------*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+    /* overflow: hidden; */
+    /* dong tren dung de responsive thanh nav bar ket hop voi line-height */
+    display: block;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: block;
+}
+
+#nav>li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav>li>a {
+    color: white;
+    text-transform: uppercase;
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    background-color: grey;
+    color: black;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    top: 100%;
+    /*doan nay them cho chac chu no tu auto roi */
+    left: 0;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+.search, .menu {
+    float: right;
+}
+
+#header .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* để nút menu đừng bị trôi mất */
+    display: none;
+}
+
+.search .fa-search,
+.menu .fa-bars{
+    color: white;
+    background-color: black;
+    right: 0;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+.menu:hover .fas {
+    background-color: #ccc;
+    color: #000;
+}
+
+.search .fa-search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+/*---------------------------------end header----------------*/
+/* begin slider */
+#slider {
+    margin-top: 46px;
+    height: auto;
+}
+
+#slider>div {
+    position: relative;
+}
+
+#slider>div img {
+    width: 100%;
+}
+
+#slider .slider-text {
+    position: absolute;
+    bottom: 30px;
+    /*can xem lai cho nay */
+    text-align: center;
+    padding: 24px 0;
+    color: white;
+    left: 0;
+    right: 0;
+    text-shadow: 0 0 1px #000;
+}
+
+#slider .text-header {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#slider .text-content {
+    font-weight: bold;
+    margin: 15px;
+}
+
+/*----about------*/
+
+.heading {
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.sub-heading {
+    margin: 15px 0;
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.6;
+    font-style: italic;
+}
+
+.about-content {
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    padding: 32px 0;
+}
+
+#content .member-name {
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+#content .member {
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-img {
+    border-radius: 4px;
+    width: 154px;
+}
+
+/*****tour****/
+/* tour-tickets */
+.tour-dates {
+    background-color: black;
+    /*can khoi bu chua de set mau back-ground*/
+}
+
+.tour .heading,
+.tour .sub-heading {
+    color: white;
+}
+
+.tour ul {
+    background-color: white;
+    color: grey;
+    list-style: none;
+}
+
+.tour li {
+    padding: 8px 16px;
+}
+
+.tour li:first-child,
+.tour li:nth-child(2) {
+    border-bottom: solid rgb(221, 221, 221) 1px;
+}
+
+.tour .Sold-out {
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 0 8px;
+    color: white;
+}
+
+.tour .quantity {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    float: right;
+    margin-right: 16px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+/* tour-places */
+.places {
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+.places .place-item {
+    width: calc(100%/3);
+    float: left;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.places img {
+    width: 100%;
+    /* de khong bi dư ra */
+    display: block;
+}
+
+.place-content {
+    background-color: white;
+    padding: 0 16px;
+    display: inline-block;
+}
+
+.place-heading,
+.place-date,
+.place-infor {
+    margin: 15px 0;
+    display: block;
+}
+
+.place-heading {
+    font-weight: 500;
+}
+
+.place-date {
+    opacity: 0.6;
+}
+
+.place-buy {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+    display: inline-block;
+    /* không để display inline-block là bị sai */
+    }
+
+/* contact */
+.contact-form {
+    padding: 32px 0;
+}
+
+.contact .fas {
+    width: 30px;
+}
+
+.contact .address {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.contact .form {
+    font-size: 15px;
+}
+
+.form-control {
+    padding: 8px;
+    border: 1px #ccc solid;  
+    width: 100%;
+}
+
+.form-btn {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 8px 16px;
+    margin: 16px 0;
+    float: right;
+    border-width: 2px ;
+}
+
+.form-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+/* map */
+#map img {
+    width: 100%;
+}
+/* footer */
+.footer {
+    text-align: center;
+    opacity: 0.6;
+}
+
+.social i {
+    font-size: 24px;
+    color: #000;
+}
+
+.social i:hover,
+.footer p a:hover {
+    color: #ccc;
+}
+
+.footer p {
+    margin: 15px 0;
+}

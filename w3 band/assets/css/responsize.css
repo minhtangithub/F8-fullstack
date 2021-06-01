@@ -1,0 +1,96 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1024px) {
+    
+}
+
+/* tablet and mobile  */
+@media (max-width: 1023px) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    .adress {
+        line-height: 2;
+    }
+    .social-item {
+        font-size: 48px;
+        margin: 0 8px;
+    }
+    .copyright {
+        padding : 12px 0;
+        display: inline-block;
+        /* đưa về inline-bolck để nó đẩy xuống được chứ ban dầu là inline nó không thừa hưởng chỉ đứng im không tự dịch xuống */
+    }
+}
+/* mobile */
+@media (max-width: 739px) {
+    #header {
+        overflow: hidden;
+    }
+    
+    #header .search {
+        display: none ;
+    }
+    #header .menu{
+        display: inline-block;
+    }
+    
+    #nav > li {
+        display: block;
+        /* để cho thanh nav chạy dọc */
+    }
+    
+    #nav li a {
+        padding: 1px 24px;
+    }
+    #nav {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+
+    #nav .subnav {
+        position: initial;
+        /* về position ban đầu để không bị hidden bởi overflow  */
+    }
+    
+    #nav .subnav a {
+        color: #fff;
+        background-color: #333;
+        padding: 5px 42px;
+    }
+
+    #slider .slider-text {
+        display: none;
+    }
+
+    .s-btn {
+        text-align: center;
+        width: 100%;
+    }
+    .s-col-full {
+        width: 100%;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px;
+    }
+    #content .member {
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    #content .place-item {
+        width: 100%;
+    }
+}
