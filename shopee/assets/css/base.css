@@ -22,6 +22,7 @@ html {
     /* ket hop voi box-sizing o tren */
 }
 
+
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -56,7 +57,11 @@ html {
 }
 
 .pd-top-36 {
-    padding-top: 36px;
+    padding-top: 36px ;
+}
+
+.pd-bottom-36 {
+    padding-bottom: 36px;
 }
 @keyframes FadeIn {
     from {
@@ -314,7 +319,6 @@ html {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0;
 }
 
 .pagination__item {
