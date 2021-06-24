@@ -188,6 +188,7 @@ after nguoc lai */
 .header__notify-item:hover {
     background-color: #ccc;
 }
+
 .header__notify-header {
     height: 40px;
     color: #999;
@@ -242,6 +243,16 @@ after nguoc lai */
     display: flex;
     align-items: center;
 }
+
+.header__search-btn-on-mobile {
+    display: none;
+}
+
+#radio-for-history {
+    display: none;
+}
+
+
 
 .header___search-logo {
     width: 200px;
@@ -366,6 +377,7 @@ after nguoc lai */
     font-size: 1.4rem;
     box-shadow: 0 1px 2px #ccc;
     background-color: var(--white-color);
+    z-index: 2;
     display: none;
 }
 
@@ -529,6 +541,7 @@ after nguoc lai */
 .header__cart-list-item:hover {
     background-color: #ccc;
 }
+
 .header__cart-item-img {
     width: 42px;
     height: 42px;
@@ -596,6 +609,7 @@ after nguoc lai */
     background-color: #ccc;
     color: var(--primary);
 }
+
 .header__cart--has-cart-btn {
     border: none;
 }
@@ -603,7 +617,7 @@ after nguoc lai */
 .header__cart-btn-wrap {
     display: flex;
     justify-content: flex-end;
-    margin : 10px;
+    margin: 10px;
 }
 
 /* end header cart  */
@@ -626,7 +640,7 @@ after nguoc lai */
     font-size: 1.6rem;
     font-weight: 600;
     padding-left: 8px;
-    padding-top: 4px ;
+    padding-top: 4px;
     text-transform: uppercase;
 }
 
@@ -664,8 +678,9 @@ after nguoc lai */
     color: var(--primary);
     right: -4px;
 }
-.category__list-item--active .category__list-item-link{
-    color : var(--primary);
+
+.category__list-item--active .category__list-item-link {
+    color: var(--primary);
     font-weight: 600;
 }
 
@@ -689,7 +704,7 @@ after nguoc lai */
     border-radius: 3px;
 }
 
-.filter__btn-range{
+.filter__btn-range {
     display: flex;
     align-items: center;
 }
@@ -712,7 +727,7 @@ after nguoc lai */
 .filter__page {
     display: flex;
     align-items: center;
-    margin-left: auto; 
+    margin-left: auto;
     /* cho no qua ben phai  */
 }
 
@@ -749,6 +764,7 @@ after nguoc lai */
 .filter__page-btn:first-child {
     border-right: 1px solid #eee;
 }
+
 .filter__page-btn--disabled {
     background-color: #f9f9f9;
     color: #ccc;
@@ -763,6 +779,7 @@ after nguoc lai */
 .grid-col-2-0f-10 {
     margin-bottom: 20px;
 }
+
 .product-item {
     background-color: var(--white-color);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
@@ -771,12 +788,14 @@ after nguoc lai */
     border-bottom-right-radius: 2px;
     transition: transform ease-in 0.1s;
     will-change: transform;
+    margin-bottom: 10px;
 }
 
 .product-item:hover {
     box-shadow: 0 1px 20px 0 rgb(0 0 0 / 5%);
     transform: translateY(-1px);
 }
+
 .product-item__img {
     /* phai dat cai nay moi hien background-image:  */
     padding-top: 100%;
@@ -785,9 +804,10 @@ after nguoc lai */
 }
 
 .product-item__content {
-    padding:10px;
+    padding: 10px;
 }
-.product-item___name  {
+
+.product-item___name {
     font-size: 1.2rem;
     color: var(--text-color);
     line-height: 1.8rem;
@@ -800,21 +820,25 @@ after nguoc lai */
     font-weight: 400;
     margin: 0;
 }
+
 .product-item__price {
     display: flex;
     margin-top: 5px;
     align-items: baseline;
 }
+
 .product-item__price-old {
     font-size: 1.2rem;
     color: #555;
     text-decoration: line-through;
     margin-right: 5px;
 }
+
 .product-item__price-current {
     font-size: 1.4rem;
     color: var(--primary);
 }
+
 .product-item__action {
     display: flex;
     margin-top: 5px;
@@ -849,15 +873,18 @@ after nguoc lai */
     font-size: 1rem;
     color: rgb(255, 206, 61);
 }
+
 .product-item__origin {
     margin-top: 5px;
     display: flex;
 }
+
 .product-item__origin-brand {
     font-size: 1.2rem;
     color: #666;
     font-weight: 300;
 }
+
 .product-item__origin-nation {
     font-size: 1.2rem;
     color: #666;
@@ -866,9 +893,10 @@ after nguoc lai */
     /* thay vi space between de margin auto no tu troi ve ben kia  */
 
 }
+
 .product-item__favorite {
     position: absolute;
-    left : -4px;
+    left: -4px;
     top: 10px;
     color: var(--primary);
     background-color: currentColor;
@@ -898,6 +926,7 @@ after nguoc lai */
     font-size: 0.8rem;
     padding-left: 4px;
 }
+
 .product-item__sale-off {
     position: absolute;
     top: 0;
@@ -906,7 +935,7 @@ after nguoc lai */
     height: 35px;
     padding: 4px 2px 3px 3px;
     text-align: center;
-    color:rgba(255, 216, 64, 0.95);
+    color: rgba(255, 216, 64, 0.95);
     background-color: currentColor;
 }
 
@@ -919,12 +948,14 @@ after nguoc lai */
     border-width: 0 19px 6px 19px;
     border-color: transparent currentColor transparent currentColor;
 }
+
 .product-item__sale-off-percent {
     font-size: 1.2rem;
     font-weight: 600;
     color: #ee4d2d;
     line-height: 1.2rem;
 }
+
 .product-item__sale-off-label {
     font-size: 1.2rem;
     font-weight: 600;
@@ -942,6 +973,7 @@ after nguoc lai */
 .mg-left-auto {
     margin-left: auto !important;
 }
+
 .footer__heading {
     color: rgba(0, 0, 0, 0.54);
     font-size: 1.2rem;
@@ -973,6 +1005,7 @@ after nguoc lai */
     font-size: 1.6rem;
     color: var(--text-color);
 }
+
 .footer__contact {
     display: flex;
 }
@@ -983,6 +1016,7 @@ after nguoc lai */
     object-fit: contain;
     /* khong biet cai nay lam gi  */
 }
+
 .footer__qr img {
     width: 100%;
     height: 100%;
@@ -996,7 +1030,7 @@ after nguoc lai */
 }
 
 .footer__CH-play img,
-.footer__appstore img{
+.footer__appstore img {
     height: 20px;
 }
 
@@ -1004,4 +1038,3 @@ after nguoc lai */
 .footer__CH-play {
     margin-left: 13px;
 }
-
